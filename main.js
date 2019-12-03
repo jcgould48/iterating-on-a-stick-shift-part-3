@@ -65,7 +65,7 @@ const isCarnivore = function(dinosaur) {
   return dinosaur.carnivore === true;
 
   // Or, more simply:
-  return dinosaur.carnivore
+  // return dinosaur.carnivore
 }
 
 const isExtinct = function(dinosaur) {
@@ -88,7 +88,14 @@ const isCretaceous = function(dinosaur) {
 }
 
 const singularizeDinos = function(dinos) {
-}
+    let newArr = [];
+  
+    for (const dino of dinos) {
+      newArr.push(makeSingular(dino))
+    }
+  
+    return newArr;
+  }
 
 const truncateDinos = function(dinos) {
 }
