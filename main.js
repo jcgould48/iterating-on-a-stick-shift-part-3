@@ -88,7 +88,7 @@ const isCretaceous = function(dinosaur) {
 }
 
 const singularizeDinos = function(dinos) {
-    let newArr = [];
+    const newArr = [];
   
     for (const dino of dinos) {
       newArr.push(makeSingular(dino))
@@ -98,12 +98,27 @@ const singularizeDinos = function(dinos) {
   }
 
 const truncateDinos = function(dinos) {
+const newArr = [];
+
+for (const dino of dinos){
+  newArr.push(truncateSpecies(dino));
+}
+return newArr;
 }
 
 const makeAllExtinct = function(dinos) {
-}
+  const newArr = [];
+
+  for (const dino of dinos){
+    newArr.push(makeExtinct(dino));
+  }
+  return newArr;
+  }
+
 
 const carnivoresOnly = function(dinos) {
+  const newArr = [];
+  return newArr.
 }
 
 const herbivoresOnly = function(dinos) {
